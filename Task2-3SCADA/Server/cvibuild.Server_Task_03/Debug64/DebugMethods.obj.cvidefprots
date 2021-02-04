@@ -1,0 +1,5 @@
+[ResetAllValues]
+Class="Function"
+Prototype="void ResetAllValues(double y1k, double y1k_1, double y2k, double y2k_1, double yk_EE, double yk_1_EE, double yk_Tr1, double yk_1_Tr1, double yPIDk, double yPIDk_1, double yPIDk_2);"
+SourceLocation="d:\NILWCVI2012SP1\Task2-3SCADA\Server\DebugMethods.c:40:6"
+

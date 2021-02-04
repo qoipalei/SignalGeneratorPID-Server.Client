@@ -1,0 +1,10 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="d:\NILWCVI2012SP1\Task1SCADA\Client.zip (Unzipped Files)\client.c:45:5"
+
+[esantionare_Client]
+Class="Function"
+Prototype="int esantionare_Client(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="d:\NILWCVI2012SP1\Task1SCADA\Client.zip (Unzipped Files)\client.c:106:17"
+

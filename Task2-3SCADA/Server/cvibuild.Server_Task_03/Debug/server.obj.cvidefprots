@@ -1,0 +1,15 @@
+[main]
+Class="Function"
+Prototype="int main(int argc, char *argv[]);"
+SourceLocation="d:\NILWCVI2012SP1\Task2-3SCADA\Server\server.c:43:5"
+
+[esantionare_Server]
+Class="Function"
+Prototype="int esantionare_Server(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="d:\NILWCVI2012SP1\Task2-3SCADA\Server\server.c:100:17"
+
+[ClearCallback]
+Class="Function"
+Prototype="int ClearCallback(int panel, int control, int event, void *callbackData, int eventData1, int eventData2);"
+SourceLocation="d:\NILWCVI2012SP1\Task2-3SCADA\Server\server.c:143:17"
+

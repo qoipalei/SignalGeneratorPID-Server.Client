@@ -1,0 +1,10 @@
+[DebugServerSend]
+Class="Function"
+Prototype="void DebugServerSend();"
+SourceLocation="d:\NILWCVI2012SP1\Task2-3SCADA\Client\DebugMethods.c:37:6"
+
+[DebugTraductorReadFromServer]
+Class="Function"
+Prototype="void DebugTraductorReadFromServer();"
+SourceLocation="d:\NILWCVI2012SP1\Task2-3SCADA\Client\DebugMethods.c:41:6"
+

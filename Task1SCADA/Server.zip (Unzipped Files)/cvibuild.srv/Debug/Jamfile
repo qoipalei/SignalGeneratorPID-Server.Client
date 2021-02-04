@@ -1,0 +1,50 @@
+CCFLAGS = -g ;
+HDRS = 	"d:\\nilwcvi2012sp1\\cvi2020\\toolslib\\activex\\word"
+	"d:\\nilwcvi2012sp1\\cvi2020\\toolslib\\activex\\excel"
+	"d:\\nilwcvi2012sp1\\cvi2020\\toolslib\\custctrl"
+	"d:\\nilwcvi2012sp1\\cvi2020\\toolslib\\custctrl\\custsupp"
+	"d:\\nilwcvi2012sp1\\cvi2020\\toolslib\\cvirtsup"
+	"d:\\nilwcvi2012sp1\\cvi2020\\toolslib\\datasock"
+	"d:\\nilwcvi2012sp1\\cvi2020\\toolslib\\daqUtil"
+	"d:\\nilwcvi2012sp1\\cvi2020\\toolslib\\printing"
+	"d:\\nilwcvi2012sp1\\cvi2020\\toolslib\\toolbox"
+	"d:\\nilwcvi2012sp1\\cvi2020\\toolslib\\reportgen"
+	"d:\\nilwcvi2012sp1\\cvi2020\\toolslib\\localui"
+	"d:\\nilwcvi2012sp1\\cvi2020\\instr"
+	"D:\\NILWCVI2012SP1\\Shared\\CVI\\toolslib\\custctrl"
+	"D:\\NILWCVI2012SP1\\Shared\\CVI\\toolslib\\custctrl\\custsupp"
+	"D:\\NILWCVI2012SP1\\Shared\\CVI\\instr"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\instr"
+	"d:\\nilwcvi2012sp1\\cvi2020\\include"
+	"D:\\NILWCVI2012SP1\\Shared\\CVI\\include"
+	"C:\\ProgramData\\National Instruments\\CVI2020\\include"
+	"C:\\ProgramData\\National Instruments\\CVI\\include"
+	"d:\\nilwcvi2012sp1\\cvi2020\\include\\ansi"
+	"d:\\nilwcvi2012sp1\\cvi2020\\include\\clang\\3.3"
+	"C:\\Program Files (x86)\\IVI Foundation\\IVI\\Include"
+	"C:\\Program Files (x86)\\IVI Foundation\\VISA\\winnt\\include"
+	"D:\\NILWCVI2012SP1\\Shared\\MSDTRedistributables\\SDKHeaderFiles\\8.1"
+	"d:\\NILWCVI2012SP1\\CVI2020\\bin"
+	"d:\\NILWCVI2012SP1\\Shared\\CVI\\Bin"
+	;
+include Jamfile_instr ;
+LOCATE on "00_Variabile_Globale_Server.h" = "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)" ;
+LOCATE on "01_Initializare_Aplicatie_Server.h" = "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)" ;
+LOCATE on "02_Functii_Utilitare_Server.h" = "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)" ;
+LOCATE on "04_Formatare_Transmisie_TCP_TX_catre_Client.h" = "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)" ;
+LOCATE on "05_Formatare_TCP_RX_de_la_Client.h" = "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)" ;
+LOCATE on "06_receptie_TCP_INT_de_la_client.h" = "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)" ;
+LOCATE on "07_Elemente_FEEDBACK.h" = "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)" ;
+LOCATE on "server.c" = "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)" ;
+LOCATE on "server.h" = "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)" ;
+Object "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\server.obj" : "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\server.c" ;
+FILENUM on "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\server.obj" = 1 ;
+DEFPROTS on "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\server.obj" = "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\server.obj.cvidefprots" ;
+OUTFILE on "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\server.obj" = "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\server.obj.out" ;
+PrjObjects += "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\server.obj" ;
+Object "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\resources.res" : "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\resources.in.rc" ;
+Depends "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\resources.res" : "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\manifest.xml" ;
+MainFromObjects "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\srv.exe" : $(PrjObjects) $(InstrObjects) ;
+Depends "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\srv.exe" : "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\link_options.txt" ;
+Depends "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\srv.exe" : "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\resources.res" ;
+Depends all : "d:\\NILWCVI2012SP1\\Task1SCADA\\Server.zip (Unzipped Files)\\cvibuild.srv\\Debug\\srv.exe" ;
