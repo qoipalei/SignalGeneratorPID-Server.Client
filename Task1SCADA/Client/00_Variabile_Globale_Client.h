@@ -13,7 +13,7 @@ static void ReportTCPError (void);
 /* Variabile globale                                                         */
 /*---------------------------------------------------------------------------*/
 static unsigned int g_hconversation;
-static int          g_hmainPanel;
+static int      g_hmainPanel;
 static int			g_connected = 0;
 static int			g_TCPError = 0;
 
